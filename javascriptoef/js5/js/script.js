@@ -11,7 +11,7 @@ while (i < 4){
 }
 console.log("De totale som is :" + " " + totaal);
 
-// mogelijke andere oplossing
+// juiste oplossing
 var aantal;//declareren variabele
 var teller = 1;
 var getal;
@@ -25,5 +25,13 @@ aantal = prompt("Hoeveel getallen?");
 for(teller;teller<=aantal;teller++){
     getal = parseInt(prompt("geef getal" + teller + "in"));
     resultaat = resultaat + getal;
+}
+console.log("De totale som van" + " " + aantal + "getallen is " + resultaat);
+//while voorbeeld
+
+while(teller<=aantal){
+    getal = parseInt(prompt("geef getal" + teller + "in"));
+    resultaat = resultaat + getal;
+    teller++;
 }
 console.log("De totale som van" + " " + aantal + "getallen is " + resultaat);
