@@ -7,10 +7,17 @@ var komma = ",";
 var i = 0;
 var tekst = "";
 
-for (i;i < 100;i++){
-      tekst = tekst + i + ",";
+for (i; i < 100; i++) {
+
+    if (i < 10) {
+        tekst = tekst + "0" + i + ",";
+
+    } else {
+        tekst = tekst + i + ",";
+    }
 }
-console.log(tekst);
+console.log(tekst.substr(0, tekst.length - 1));
+
 
 
 
