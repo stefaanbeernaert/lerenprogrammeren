@@ -11,11 +11,11 @@ var i = eindgetal;
 //console.log(i);
 for(i;i > 0;i--){
 
-    if(i / eindgetal === 1 && eindgetal / eindgetal){
-        console.log(eindgetal + " is een priemgetal");
-    }else {
-        console.log(i + " is geen priemgetal");
-
-
+    if(i < 1){
+        console.log(i + " geen priemgetal");
+    }else if(eindgetal %i === 1){
+        console.log(i + " geen priemgetal");
+    }else{
+        console.log(i + " priemgetal")
     }
 }
