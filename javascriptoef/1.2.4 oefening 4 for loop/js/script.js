@@ -1,17 +1,19 @@
-var naam = "stefaan";
-var i;
+ /*
+var getal = parseInt(prompt("geef een getal?"));
+var resultaat = 0;
+//teller 1
+var i = getal - 1;
 
-for (i = 0;i < 10;i++){
+for(i;i > 1;i--){
+   resultaat = getal * i;
+   resultaat * (i -1);
+   */
+ // juist oplossing //
 
-    document.getElementById("demo").innerHTMl=(naam);
+ var getal = parseInt(prompt("geef een getal in"));
+var fac = 1;
+
+for(i=1; i <= getal;i++){
+fac = fac * i;
 }
-
-
-// werkt in console maar niet in document
-/*
-for(var i = 0; i < 10; i++){
-    console.log(naam);
-}
-*/
-
-
+console.log(fac);

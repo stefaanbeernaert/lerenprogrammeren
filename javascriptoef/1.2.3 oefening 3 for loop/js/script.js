@@ -1,12 +1,27 @@
 
-var string = "";
+var resultaat = "";
+var naarpagina= "";
 
 for (var i = 1;i <= 5;i++){
-    for(var x = 0;x < i;x++) {
-        string += "*";
+  {
+        resultaat += "*";
+        console.log(resultaat);
+        naarpagina = naarpagina + resultaat + "<br>";
     }
-    string += "<br>";
+   // resultaat += "<br>";
 }
-document.getElementById("demo").innerHTML=(string);
+//document.getElementById("demo").innerHTML=(resultaat);
+for (var j = 4;j >= 1;j--) {
+   resultaat = resultaat.substr(0,j);
+   console.log(resultaat);
+    naarpagina = naarpagina + resultaat + "<br>";;
+}
+document.getElementById("demo").innerHTML=(naarpagina);
+
+/*
+var sterren = "******";
+console.log(sterren.length);
+*/
+
 
 
