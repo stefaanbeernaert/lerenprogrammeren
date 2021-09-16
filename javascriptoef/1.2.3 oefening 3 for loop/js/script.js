@@ -1,4 +1,4 @@
-
+/*
 var resultaat = "";
 var naarpagina= "";
 
@@ -25,3 +25,18 @@ console.log(sterren.length);
 
 
 
+
+var aantallijnen = parseInt(prompt("geef een even aantal lijnen in :"));
+var helft = aantallijnen / 2;
+var ster = "*";
+var resultaat = "";
+var i = 1;
+
+for (i;i <= helft; i++){
+    resultaat = resultaat + ster;
+    console.log(resultaat);
+}
+for (i=helft;i >= 1;i--){
+    resultaat = resultaat.substr(0,i);
+    console.log(resultaat);
+}
