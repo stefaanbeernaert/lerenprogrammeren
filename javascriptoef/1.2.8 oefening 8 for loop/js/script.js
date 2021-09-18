@@ -9,4 +9,13 @@ wanneer dit getal bijvoorbeeld 130 is dan is de volgende reeks de uitkomst:
 tip gebruik leave functie
  */
 var getal = parseInt(prompt("geef een getal?"));
-console.log(getal);
+i = 1;
+printer = "";
+totaal = 1;
+
+for(i;i <= getal;i++){
+    printer = printer + totaal + ", ";
+    totaal = i * 2;
+
+}
+console.log(printer.substring(0,printer.length-2));
