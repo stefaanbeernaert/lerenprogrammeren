@@ -8,14 +8,6 @@ de grootste gemene deler van 105 en 75 is : 15
 
  */
 
-var  getalEen = parseInt(prompt("geef een getal?"));
-var  getalTwee = parseInt(prompt("geef een 2de getal"));
-
-
-
-
-
-/*
 var getal1 = parseInt(prompt("Geef eerste getal"));
 var getal2 = parseInt(prompt("Geef tweede getal"));
 var i = 0
@@ -31,4 +23,4 @@ for(i;i>=1;i--){
         break
     }
 }
-*/
+
